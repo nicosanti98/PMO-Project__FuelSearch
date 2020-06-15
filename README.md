@@ -20,4 +20,4 @@ Rilevazioni: https://www.mise.gov.it/images/exportCSV/prezzo_alle_8.csv
 
 
 ##### Nota: 
-> L'App è disponibile solamente per Android. La cartella FuelSeatch.iOS è presente solamente per rappresentare il futuro sviluppo del codice anche per dispositivi Apple
+> L'App è disponibile solamente per Android. La cartella FuelSearch/FuelSeatch.iOS è presente solamente per rappresentare il futuro sviluppo del codice anche per dispositivi Apple
