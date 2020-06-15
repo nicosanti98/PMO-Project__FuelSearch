@@ -1,0 +1,41 @@
+{
+  "version": 2,
+  "dgSpecHash": "FfcFC92m9tjorK8TKicA07ukFfSDQrawm/3x1YiiFK56HOcWHjyI/v8r6rdHn1lQ3pjINIQ2XufD5p8J9AgoJQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\FuelSearch\\FuelSearch.iOS\\FuelSearch.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microcharts\\0.7.1\\microcharts.0.7.1.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microcharts.forms\\0.7.1\\microcharts.forms.0.7.1.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\skiasharp\\1.59.1\\skiasharp.1.59.1.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\skiasharp.views\\1.59.1.1\\skiasharp.views.1.59.1.1.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\skiasharp.views.forms\\1.59.1.1\\skiasharp.views.forms.1.59.1.1.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.3\\sqlitepclraw.provider.dynamic_cdecl.2.0.3.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\system.valuetuple\\4.4.0\\system.valuetuple.4.4.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\xam.plugins.downloadmanager\\1.4.0\\xam.plugins.downloadmanager.1.4.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\xamarin.forms\\3.4.0.1008975\\xamarin.forms.3.4.0.1008975.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\xamarin.forms.maps\\4.6.0.847\\xamarin.forms.maps.4.6.0.847.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "È stato rilevato il downgrade del pacchetto Xamarin.Forms da 4.6.0.847 a 3.4.0.1008975. Fare riferimento al pacchetto direttamente dal progetto per selezionare una versione diversa. \r\n FuelSearch.iOS -> FuelSearch -> Xamarin.Forms (>= 4.6.0.847) \r\n FuelSearch.iOS -> Xamarin.Forms (>= 3.4.0.1008975)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
+}

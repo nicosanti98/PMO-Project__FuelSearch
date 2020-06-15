@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:local="clr-namespace:FuelSearch.Index" xmlns:local1="clr-namespace:FuelSearch"
+             x:Class="FuelSearch.Index.IndexDetail"
+             Title="Home - Migliori e peggiori in zona">
+    <StackLayout Padding="10">
+
+        <RefreshView x:Name="Refresh" IsRefreshing="False">
+            <Grid >
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+
+                <Image Grid.Column="1" Grid.Row="0" Source="frecciarossa.png" WidthRequest="50" HeightRequest="50" Rotation="270">
+                </Image>
+                <Image Grid.Column ="0" Grid.Row="0" Source="frecciaverde.png" WidthRequest="50" HeightRequest="50" Rotation="90">
+                </Image>
+                <ListView x:Name="listTop" Grid.Column="0" Grid.Row="1" IsEnabled="True" HasUnevenRows="True" ItemSelected="ListTop_ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="60"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Grid.RowSpan="2" Grid.Column="0" Source="{Binding logo}" WidthRequest="40" HeightRequest="40" HorizontalOptions="Start"/>
+                                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding prezzo}" TextColor="green" FontSize="16"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Start"/>
+                                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding indirizzo}" HorizontalOptions="StartAndExpand" FontSize="Micro"/>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <ListView x:Name="listFlop" Grid.Column="1" Grid.Row="1" IsEnabled="True" HasUnevenRows="True" ItemSelected="ListFlop_ItemSelected" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="60"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Grid.RowSpan="2" Grid.Column="0" Source="{Binding logo}" WidthRequest="40" HeightRequest="40" HorizontalOptions="Start"/>
+                                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding prezzo}" TextColor="red" FontSize="16"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Start"/>
+                                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding indirizzo}" HorizontalOptions="StartAndExpand" FontSize="Micro"/>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Grid Grid.Row="2" Grid.ColumnSpan="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Slider x:Name="slider" MaximumTrackColor="DarkBlue" ThumbColor="DodgerBlue" MinimumTrackColor="DodgerBlue" Minimum="0.5" Value="2.5" Grid.Column="0" Maximum="7.5" ValueChanged="slider_ValueChanged"/>
+                    <Label x:Name="labl" Text="Raggio: 25 km" HorizontalOptions="Center" Grid.Column="1" FontSize="Small" VerticalOptions="Center"/>
+                    <Button Text="Ricerca" Grid.Column="2" Clicked="Button_Clicked" BackgroundColor="#EFEFEF"/>
+                </Grid>
+
+                <local1:CustomMap x:Name="Map" Grid.Row="3" Grid.ColumnSpan="2" HasZoomEnabled="True">
+                </local1:CustomMap>
+                <ImageButton x:Name="btn" Source="refresh.png" Grid.Row="4" IsVisible="False" BackgroundColor="#EFEFEF" HeightRequest="20" WidthRequest="20" Grid.ColumnSpan="2" Clicked="ImageButton_Clicked"/>
+
+            </Grid>
+        </RefreshView>
+       
+
+
+    </StackLayout>
+</ContentPage>

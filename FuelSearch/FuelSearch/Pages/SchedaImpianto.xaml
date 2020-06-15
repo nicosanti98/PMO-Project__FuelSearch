@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="FuelSearch.Index.SchedaImpianto"
+             Title="Scheda Impianto">
+    <ScrollView>
+        <RefreshView x:Name="Refresh">
+            <Grid Padding="10" VerticalOptions="StartAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Image VerticalOptions="StartAndExpand" Grid.Column="0" Grid.Row="0" x:Name="logo"/>
+                <Grid Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2" Padding="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Label x:Name="title" Grid.Row="0" HorizontalOptions="Center" TextColor="Black" FontSize="Large" FontAttributes="Bold"/>
+                    <Label x:Name="subtitle" Grid.Row="1" VerticalOptions="Start" HorizontalOptions="Center" FontSize="Small" FontAttributes="Italic"/>
+                </Grid>
+                <StackLayout Grid.Row="1" Grid.ColumnSpan="3">
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Row="0" Grid.ColumnSpan="2" Text="Informazioni Dettagliate" HeightRequest="100" FontAttributes="Bold" VerticalOptions="Start" TextColor="OrangeRed"/>
+                        <Label Grid.Row="1" Grid.Column="0" Text="Indirizzo:" FontAttributes="Bold"/>
+                        <Label Grid.Row="1" Grid.Column="1" x:Name="Indirizzo" FontSize="Small"/>
+                        <Label Grid.Row="2" Grid.Column="0" Text="Servizio:" FontAttributes="Bold"/>
+                        <Label Grid.Row="2" Grid.Column="1" x:Name="Servizio" FontSize="Small"/>
+                        <Label Grid.Row="3" Grid.Column="0" Text="Prezzo:" FontAttributes="Bold"/>
+                        <Label Grid.Row="3" Grid.Column="1" x:Name="Prezzo" FontAttributes="Bold, Italic" FontSize="Small"/>
+                        <Label Grid.Row="4" Grid.Column="0" Text="Ultima Rilevazione:" FontAttributes="Bold"/>
+                        <Label Grid.Row="4" Grid.Column="1" x:Name="Rilevazione" FontSize="Small"/>
+                    </Grid>
+
+                    <Button BackgroundColor="#EFEFEF" x:Name="OpenMap" Text="Apri nelle Mappe" Clicked="OpenMap_Clicked"/>
+
+                </StackLayout>
+                <StackLayout Grid.ColumnSpan="3" Grid.Row="2">
+                    <Label Text="Grafico rilevazioni degli ultimi 15 Giorni:"></Label>
+                    <forms:ChartView x:Name="Chart"  HeightRequest="170"/>
+                </StackLayout>
+
+            </Grid>
+        </RefreshView>
+        
+    </ScrollView>
+    
+
+
+</ContentPage>

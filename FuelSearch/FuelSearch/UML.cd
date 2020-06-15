@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="FuelSearch.Parser" Collapsed="true">
+    <Position X="5.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Parsers\Parser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelSearch.ParseData">
+    <Position X="7" Y="9" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ABGAAAAAAAAQAAAgAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Parsers\ParseData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelSearch.DB.ConcreteQueryBuilder" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="7.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAABAABAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>DB\Query Builder Pattern\ConcreteQueryBuilder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="query" />
+    </ShowAsAssociation>
+    <Lollipop Orientation="Bottom" Position="0.1" />
+  </Class>
+  <Class Name="FuelSearch.DB.Query">
+    <Position X="9.25" Y="7.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAACAAAAAAAAAAAAAAAAAEAAIAAAAAAA=</HashCode>
+      <FileName>DB\Query Builder Pattern\Query.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelSearch.DB.QueryDirector">
+    <Position X="13.75" Y="7.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DB\Query Builder Pattern\QueryDirector.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="builder" />
+      <Property Name="Builder" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FuelSearch.RemoteDBConnection" BaseTypeListCollapsed="true">
+    <Position X="20.5" Y="7.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AoAAAAAAAACAAAAAAAAAAIAAAAAAABAAAQAIAAAABAA=</HashCode>
+      <FileName>DB\RemoteDBConnection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.299" />
+  </Class>
+  <Class Name="FuelSearch.GeneralItem">
+    <Position X="16" Y="7.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BkABAAAAAACAJAAAAAAAQACBCAAAAAAAAAgAAEAAAAA=</HashCode>
+      <FileName>ItemsDefinition\GeneralItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelSearch.GeneralListViewItem">
+    <Position X="18.25" Y="7.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAABBAAgAAEAFAAAAAAAAAAAAAAAAAAAAAgAAAZAIAA=</HashCode>
+      <FileName>ItemsDefinition\GeneralListViewItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelSearch.Index.Contatti" Collapsed="true">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAACAAAAAAAAAAIAMAAA=</HashCode>
+      <FileName>Pages\Contatti.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelSearch.Index.IndexDetail" Collapsed="true">
+    <Position X="9.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIACAAAAACEABAAQAAAAAAQACAAgABAAAAAAABAAA=</HashCode>
+      <FileName>Pages\IndexDetail.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelSearch.Index.IndexMaster" Collapsed="true">
+    <Position X="11.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Pages\IndexMaster.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelSearch.Index.Intornoame">
+    <Position X="0.5" Y="2" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>gAEAAAACACgAAAgAAAAAIACAAAABAgABgAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Intornoame.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelSearch.Index.ListSearch">
+    <Position X="2.75" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAIAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Pages\ListSearch.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelSearch.Index.SchedaImpianto">
+    <Position X="7.25" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAJEAAAAQAAAAAAAAAAAABAAgAAAAAQAQ=</HashCode>
+      <FileName>Pages\SchedaImpianto.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelSearch.Index.Search" Collapsed="true">
+    <Position X="14" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAIAAAAAAAAAI=</HashCode>
+      <FileName>Pages\Search.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelSearch.Parsers.JSONParser">
+    <Position X="4.75" Y="9" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Parsers\JSONParser.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="obj" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="12.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Newtonsoft.Json.Linq.JArray" Collapsed="true">
+    <Position X="4.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Xamarin.Forms.ContentPage" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="FuelSearch.DB.IDb" Collapsed="true">
+    <Position X="20.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAACAAAAAAAAAAIAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>DB\IDB.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FuelSearch.IQueryBuilder">
+    <Position X="13.75" Y="9.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DB\Query Builder Pattern\IQueryBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

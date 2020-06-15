@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FuelSearch.Index.Contatti"
+             Title="Contatti">
+    <StackLayout Padding="10">
+        <Image Source="mail.png" WidthRequest="50" HeightRequest="50"/>
+        <Editor x:Name="Oggetto" BackgroundColor="#F8F8FF" Text="Oggetto" Focused="Oggetto_Focused" FontSize="Small" Unfocused="Oggetto_Unfocused"/>
+        <Editor x:Name="Text" BackgroundColor="#F8F8FF" HeightRequest="200" Text="Messaggio" FontSize="Small" Focused="Text_Focused" Unfocused="Text_Unfocused"/>
+        <Button Text="Invia" Clicked="Button_Clicked"></Button>
+        <Grid VerticalOptions="EndAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.ColumnSpan="2" Text="Sviluppato da Nicolò Santini, 2020" HorizontalOptions="Center" VerticalOptions="EndAndExpand" FontAttributes="Bold"/>
+            
+        </Grid>
+        
+    </StackLayout>
+</ContentPage>

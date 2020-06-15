@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps" xmlns:local="clr-namespace:FuelSearch"
+             x:Class="FuelSearch.Index.Intornoame"
+             Title="Cosa trovo attorno a me?"
+             >
+    <ScrollView x:Name="Scroll">
+        <StackLayout>
+            <Grid Padding="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Slider x:Name="slider" MaximumTrackColor="DarkBlue" ThumbColor="DodgerBlue" MinimumTrackColor="DodgerBlue" Minimum="0.5" Grid.Column="0" ValueChanged="Slider_ValueChanged" Maximum="25" Grid.Row="0"/>
+                <Label x:Name="labl" Text="Raggio: 0,5 km" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" FontSize="Small"/>
+                <Picker x:Name="descCarburante" SelectedIndexChanged="DescCarburante_SelectedIndexChanged" Title="Tipo Carburante"  Grid.Column="1" FontSize="Small" VerticalOptions="Center" Grid.Row="0" />
+                <StackLayout Grid.ColumnSpan="2" Grid.Row="2"  >
+                    <ImageButton VerticalOptions="Start" BackgroundColor="#EFEFEF" HeightRequest="40" BorderWidth="1" BorderColor="DarkGray" Source="search.png" IsEnabled="False" x:Name="btncerca" Clicked="Btncerca_Clicked"/>
+                </StackLayout>
+
+
+                <ImageButton VerticalOptions="End" Grid.Row="4" Grid.ColumnSpan="2" x:Name="btn" Source="refresh.png" BackgroundColor="#EFEFEF" IsVisible="False" HeightRequest="50" WidthRequest="20" Clicked="Btn_Clicked"/>
+                <local:CustomMap Grid.Row="3" Grid.ColumnSpan="2" x:Name="Map" IsShowingUser="True" HeightRequest="350"/>
+            </Grid>
+            <StackLayout>
+                <StackLayout Padding="20">
+                    <Label x:Name="Count" Text="Risultati ottenuti: "/>
+                    <ListView x:Name="lista" HasUnevenRows="True" ItemSelected="lista_ItemSelected">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid BackgroundColor="{Binding background}">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.RowSpan="3" Grid.Column="0" VerticalOptions="Center" Source="{Binding logo}" WidthRequest="60" HeightRequest="60"/>
+                                        <Label Grid.Column="1" Grid.Row="0" VerticalOptions="Center" x:Name="lblBandiera" FontAttributes="Bold" FontSize="Small" Text="{Binding bandiera}"/>
+                                        <Label Grid.Column="1" Grid.Row="2" VerticalOptions="Center" x:Name="lblisSelf" FontSize="Micro" Text="{Binding isSelf}"/>
+                                        <Label Grid.Column="1" Grid.Row="1" VerticalOptions="Center" x:Name="lblprezzo" FontSize="Small" FontAttributes="Italic, Bold" Text="{Binding prezzo}"/>
+                                        <Label Grid.Column="2" VerticalOptions="Center" Grid.Row="0" x:Name="lblindirizzo" FontSize="Micro" Text="{Binding indirizzo}"/>
+                                        <Label Grid.Column="2" Grid.Row="1" VerticalOptions="Center" x:Name="lbltipo" FontSize="Micro" FontAttributes="Bold" Text="{Binding tipo}"/>
+                                        <Label Grid.Column="2" Grid.Row="2" VerticalOptions="Center" x:Name="lblRilevazione" FontAttributes="Italic" FontSize="Micro" Text="{Binding rilevazione}"/>
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+
+            </StackLayout>
+        </StackLayout>
+       
+    </ScrollView>
+    
+</ContentPage>
