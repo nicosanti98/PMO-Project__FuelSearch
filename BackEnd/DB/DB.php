@@ -1,10 +1,10 @@
 <?php
 
     //Definizione costanti per accesso a DB
-    define ('USERNAME', 'Sql1383500');
-    define('HOST', '89.46.111.146');
-    define('PASSWORD', '6072gc5588');
-    define('DATASET', 'Sql1383500_5');
+    define ('USERNAME', '***');
+    define('HOST', '***');
+    define('PASSWORD', '***');
+    define('DATASET', '***');
     
     class DB
     {
