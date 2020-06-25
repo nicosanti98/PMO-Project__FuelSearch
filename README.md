@@ -14,3 +14,10 @@ Rilevazioni: https://www.mise.gov.it/images/exportCSV/prezzo_alle_8.csv
 
 #### URL Fuel Search in Play Store: 
 > https://play.google.com/store/apps/details?id=com.FuelSearch.FuelSearch
+
+------------
+
+
+
+##### Nota: 
+> L'App è disponibile solamente per Android. La cartella FuelSearch/FuelSeatch.iOS è presente solamente per rappresentare il futuro sviluppo del codice anche per dispositivi Apple
