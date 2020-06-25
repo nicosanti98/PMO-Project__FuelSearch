@@ -21,9 +21,12 @@ namespace FuelSearch.Index
         private MapSpan MapSpan;
         //Contiene la lista di tipi di carburante ottenuti leggendo tutto il DB
         private List<GeneralItem> ListaTipiCarburanti = new List<GeneralItem>();
+
+        private string LimitDate; 
         public Intornoame()
         {
             WebClient wc = new WebClient();
+            this.LimitDate = DateTime.Today.Subtract(TimeSpan.FromDays(15)).Year + "-" + DateTime.Today.Subtract(TimeSpan.FromDays(15)).Month + "-" + DateTime.Today.Subtract(TimeSpan.FromDays(15)).Day;
             InitializeComponent();
 
             SetPage();
@@ -97,8 +100,18 @@ namespace FuelSearch.Index
 
         }
 
-        private void Btncerca_Clicked(object sender, EventArgs e)
+        private async void Btncerca_Clicked(object sender, EventArgs e)
         {
+            
+            string r = System.IO.File.ReadAllText(System.Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "setting.txt");
+            if(!r.Equals("1"))
+            {
+               await DisplayAlert("Attenzione!", "Potresti non trovare tutti i distributori che cerchi, poichè le rilevazioni molto vecchie sono state eliminate!", "Ok");
+               System.IO.File.WriteAllText(System.Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "setting.txt", "1");
+            }
+            
+            
+            
             for (int i = 0; Map.Pins.Count != 0; i++)
             {
                 Map.Pins.RemoveAt(i);
@@ -149,7 +162,8 @@ namespace FuelSearch.Index
                 "WHERE (AnagraficaImpianto.idImpianto = Rilevazioni.idImpianto) " +
                 "AND (descCarburante = '" + descCarburante.Items[descCarburante.SelectedIndex] + "') " +
                 "AND (latitudine BETWEEN " + latin + " AND " + latfin + ")" +
-                "AND (longitudine BETWEEN " + longin + " AND " + longfin + ")";
+                "AND (longitudine BETWEEN " + longin + " AND " + longfin + ")" +
+                "AND (dtComu >= '"+this.LimitDate+"')";
             List<GeneralItem> List;
             RemoteDBConnection conn = new RemoteDBConnection(query);
             if (conn.Connect() == 0)

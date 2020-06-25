@@ -68,3 +68,4 @@ Xamarin.GooglePlayServices.Measurement.Base
 Xamarin.GooglePlayServices.Measurement.Sdk.Api
 Xamarin.GooglePlayServices.Stats
 Xamarin.GooglePlayServices.Tasks
+SQLitePCLRaw.lib.e_sqlite3.android

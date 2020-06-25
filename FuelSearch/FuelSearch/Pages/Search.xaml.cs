@@ -13,12 +13,12 @@ namespace FuelSearch.Index
     public partial class Search : ContentPage
     {
         List<GeneralItem> List = new List<GeneralItem>();
-
+        private string LimitDate; 
 
         public Search()
         {
             WebClient wc = new WebClient();
-
+            this.LimitDate = DateTime.Today.Subtract(TimeSpan.FromDays(15)).Year + "-" + DateTime.Today.Subtract(TimeSpan.FromDays(15)).Month + "-" + DateTime.Today.Subtract(TimeSpan.FromDays(15)).Day;
             InitializeComponent();
 
             AdMob.AdUnitId = "ca-app-pub-9362856343758559/4142290062";
@@ -94,6 +94,13 @@ namespace FuelSearch.Index
         //E apre una scheda ListSearch passandogli la query scelta
         private async void Btncerca_Clicked(object sender, EventArgs e)
         {
+            
+            string r = System.IO.File.ReadAllText(System.Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "setting.txt");
+            if (!r.Equals("1"))
+            {
+                await DisplayAlert("Attenzione!", "Potresti non trovare tutti i distributori che cerchi, poichè le rilevazioni molto vecchie sono state eliminate!", "Ok");
+                System.IO.File.WriteAllText(System.Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "setting.txt", "1");
+            }
             //Vista la complessità nella costruzione delle query in base ai picker selezionato, 
             //viene in questo caso utilizzato il builder pattern
             var director = new QueryDirector();
@@ -130,7 +137,7 @@ namespace FuelSearch.Index
                 //Viene creata la query grazie al BUILDER PATTERN
                 builder.BuildQuery(parameters);
                 query = builder.TakeQuery();
-
+                query = query + " AND (dtComu >= '" + this.LimitDate + "')";
                 await Navigation.PushModalAsync(new ListSearch(query));
 
             }

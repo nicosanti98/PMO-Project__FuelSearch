@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\FuelSearch\\FuelSearch.Android\\FuelSearch.Android.csproj": {}
+    "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\PMO-Project__FuelSearch\\FuelSearch\\FuelSearch.Android\\FuelSearch.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\FuelSearch\\FuelSearch.Android\\FuelSearch.Android.csproj": {
+    "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\PMO-Project__FuelSearch\\FuelSearch\\FuelSearch.Android\\FuelSearch.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\FuelSearch\\FuelSearch.Android\\FuelSearch.Android.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\PMO-Project__FuelSearch\\FuelSearch\\FuelSearch.Android\\FuelSearch.Android.csproj",
         "projectName": "FuelSearch.Android",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\FuelSearch\\FuelSearch.Android\\FuelSearch.Android.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\PMO-Project__FuelSearch\\FuelSearch\\FuelSearch.Android\\FuelSearch.Android.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\FuelSearch\\FuelSearch.Android\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\PMO-Project__FuelSearch\\FuelSearch\\FuelSearch.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\FuelSearch\\FuelSearch\\FuelSearch.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\FuelSearch\\FuelSearch\\FuelSearch.csproj"
+              "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\PMO-Project__FuelSearch\\FuelSearch\\FuelSearch\\FuelSearch.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\PMO-Project__FuelSearch\\FuelSearch\\FuelSearch\\FuelSearch.csproj"
               }
             }
           }
@@ -58,14 +58,14 @@
         }
       }
     },
-    "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\FuelSearch\\FuelSearch\\FuelSearch.csproj": {
+    "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\PMO-Project__FuelSearch\\FuelSearch\\FuelSearch\\FuelSearch.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\FuelSearch\\FuelSearch\\FuelSearch.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\PMO-Project__FuelSearch\\FuelSearch\\FuelSearch\\FuelSearch.csproj",
         "projectName": "FuelSearch",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\FuelSearch\\FuelSearch\\FuelSearch.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\PMO-Project__FuelSearch\\FuelSearch\\FuelSearch\\FuelSearch.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\FuelSearch\\FuelSearch\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\PMO-Project__FuelSearch\\FuelSearch\\FuelSearch\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

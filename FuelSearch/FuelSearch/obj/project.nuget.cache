@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ghkl9wMG5+S4kXFHvXdaIJDc5bX7jT6JYuvkfVEsgBiEvedmuYve1acw36ywLehZ8aBOzZTohklGGhHeYYpBmw==",
+  "dgSpecHash": "1oE+TrdiBHie9Gfv1TUUuNyCvSm+PBxYW0vhU3XSmhSqfSmCKJDWHmIARvLY8lSn+oK8Ngv9tEoLoGpWlftwpQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\FuelSearch\\FuelSearch\\FuelSearch.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\FuelSearch_CORROTTO\\PMO-Project__FuelSearch\\FuelSearch\\FuelSearch\\FuelSearch.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\microcharts\\0.7.1\\microcharts.0.7.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microcharts.forms\\0.7.1\\microcharts.forms.0.7.1.nupkg.sha512",

@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BackEnd",
+    "\\BackEnd\\Parsers",
+    "\\FuelSearch",
+    "\\FuelSearch\\FuelSearch",
+    "\\FuelSearch\\FuelSearch\\DB",
+    "\\FuelSearch\\FuelSearch\\DB\\Query Builder Pattern",
+    "\\FuelSearch\\FuelSearch\\ItemsDefinition",
+    "\\FuelSearch\\FuelSearch\\Pages",
+    "\\FuelSearch\\FuelSearch\\Parsers"
+  ],
+  "SelectedNode": "\\FuelSearch\\FuelSearch\\DB\\RemoteDBConnection.cs",
+  "PreviewInSolutionExplorer": false
+}
