@@ -106,7 +106,7 @@ namespace FuelSearch.Index
             string r = System.IO.File.ReadAllText(System.Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "setting.txt");
             if(!r.Equals("1"))
             {
-               await DisplayAlert("Attenzione!", "Potresti non trovare tutti i distributori che cerchi, poichè le rilevazioni molto vecchie sono state eliminate!", "Ok");
+               await DisplayAlert("Attenzione!", "Da questa versione otresti non trovare tutti i distributori che cerchi, poichè le rilevazioni molto vecchie sono state eliminate!", "Ok");
                System.IO.File.WriteAllText(System.Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "setting.txt", "1");
             }
             
